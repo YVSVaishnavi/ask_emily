@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Emily</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Ask Emily</h1>
+    <div id="app">
+        <h2>Find Campgrounds</h2>
+        <input type="text" id="location" placeholder="Enter Location">
+        <input type="text" id="preferences" placeholder="Enter Preferences">
+        <button onclick="fetchCampgrounds()">Search</button>
+        <div id="results"></div>
+
+        <h2>Calculate Route</h2>
+        <input type="text" id="start" placeholder="Start Location">
+        <input type="text" id="destination" placeholder="Destination">
+        <input type="text" id="rig_size" placeholder="RV Rig Size">
+        <button onclick="calculateRoute()">Get Route</button>
+        <div id="routeResults"></div>
+
+        <h2>Find Technicians</h2>
+        <input type="text" id="techLocation" placeholder="Enter Location">
+        <input type="text" id="issue" placeholder="Describe Issue">
+        <button onclick="findTechnicians()">Find Technicians</button>
+        <div id="techResults"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
